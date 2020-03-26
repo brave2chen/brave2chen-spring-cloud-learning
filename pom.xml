@@ -24,7 +24,7 @@
     <artifactId>spring-cloud-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>springcloud</name>
+    <name>spring-cloud-learning</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
