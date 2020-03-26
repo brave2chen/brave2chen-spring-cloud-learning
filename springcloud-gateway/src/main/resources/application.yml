@@ -1,0 +1,23 @@
+server:
+  port: 80
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      default-filters:
+      - name: Hystrix
+        args:
+          name: fallbackcmd
+          fallbackUri: forward:/fallback
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+ribbon:
+  eureka:
+    enabled: true
